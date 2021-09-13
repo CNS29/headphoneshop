@@ -1,0 +1,12 @@
+@import "variable";
+@import "mixin";
+@import "base";
+@import "gird";
+@import "header";
+@import "_product";
+@import "footer";
+@import "cart";
+
+.App {
+    overflow: hidden;
+}

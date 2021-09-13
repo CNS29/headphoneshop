@@ -1,0 +1,44 @@
+.footer {
+    margin-top: 100px;
+    background-color: $light_bg;
+    padding: 55px 150px;
+
+    .footer_title {
+        font-size: 2.2rem;
+        color: $text-color-rgba;
+        margin-bottom: 10px;
+    }
+
+    .footer_list {
+        font-size: 1.6rem;
+        color: rgba($white, .4);
+        display: flex;
+        flex-direction: column;
+
+        .footer_item {
+            margin-bottom: 5px;
+            transition: 0.2s ease;
+            a {
+                display: inline-block;
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 1px;
+                    background-color: $text-color-rgba;
+                    transition: 0.2s linear;
+                }
+            }
+
+            &:hover a::before {
+                width: 100%;
+            }
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.header {
+    @include dFlex($just: space-around);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: $height-header;
+    background-color: $bg;
+    box-shadow: 0px 1px 4px 0px $bg;
+    z-index: 999;
+
+    ul {
+        @include dFlex;
+        li {
+            margin-left: 15px;
+            padding: 10px;
+            color: $text-color-rgba;
+            transition: .2s ease;
+            font-size: 1.8rem;
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    .search {
+        color: $text-color-rgba;
+        font-size: 2rem;
+        i {
+            margin-left: 22px;
+            &:hover {
+                color: $white;
+            }
+        }
+
+        .icon-cart {
+            position: relative;
+            .icon-cart-quantity {
+                font-size: 1rem;
+                color: $white;
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: translate(50%, -50%);
+                width: 15px;
+                height: 15px;
+                line-height: 15px;
+                border-radius: 100%;
+                background-color: $cta;
+                text-align: center;
+            }
+        }
+    }
+}

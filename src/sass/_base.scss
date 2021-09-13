@@ -1,0 +1,62 @@
+html {
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    line-height: 1.6; //This is a paragraph with the recommended line-height.This is a unitless value, meaning that the line height will be relative to the font size.
+    font-family: $round;
+    background-color: $bg;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+li, i {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+// Logo
+.logo {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: $text-color-rgba;
+}
+
+// Button
+.btn {
+    @include dFlex;
+    width: 140px;
+    height: 40px;
+    color: rgba($white, .8);
+    background-color: $cta;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    span {
+        z-index: 1;
+    }
+}

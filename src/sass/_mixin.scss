@@ -1,0 +1,29 @@
+@mixin dFlex($display: flex, $just: center, $align: center) {
+    display: $display;
+    justify-content: $just;
+    align-items: $align;
+}
+
+@mixin animate($type, $time: 0.1s, $style: ease) {
+    animation: $type $time $style;
+}
+
+@keyframes fadeRightToLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInToOut {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
