@@ -15,13 +15,13 @@ const CartItem = (props) => {
                             <i className="fas fa-plus"></i>
                         </div>
                         <div className="quantity">{quantity}</div>
-                        <div onClick={() => props.update(id, -1)} className="decrease">
+                        <div onClick={() => props.update(id, -1)} style={quantity === 1? {opacity: .4}: {opacity: 1}} className="decrease">
                             <i className="fas fa-minus"></i>
                         </div>
                     </div>
                     <div className="cart_item-close">
                         <i onClick={() => props.delete(id)} className="fas fa-times"></i>
-                        <p className="total">{quantity * price}<span>{currency}</span></p>
+                        <p className="total">{(quantity * (+price)).toLocaleString("de-DE")}<span>{currency}</span></p>
                     </div>
                 </div>
             </div>

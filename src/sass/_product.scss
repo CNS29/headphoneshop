@@ -13,7 +13,8 @@
     }
     .product_card {
         max-width: 300px;
-        margin: 0 auto 15px;
+        margin: 0 auto;
+        height: 100%;
         @include dFlex;
         flex-direction: column;
         position: relative;
@@ -26,7 +27,7 @@
         z-index: 9;
         .card_img {
             img {
-                height: 300px;
+                max-height: 300px;
             }
         }
         .card_header {

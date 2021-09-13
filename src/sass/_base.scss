@@ -38,11 +38,17 @@ img {
     object-position: center;
 }
 
+input {
+    outline: none;
+    border: none;
+}
+
 // Logo
 .logo {
     font-size: 3rem;
     text-transform: uppercase;
     color: $text-color-rgba;
+    font-weight: bold;
 }
 
 // Button

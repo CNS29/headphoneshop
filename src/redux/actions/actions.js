@@ -35,3 +35,10 @@ export const updateProductQuantityFromCart = (id, number) => {
         number
     }
 }
+
+export const searchProduct = (value) => {
+    return {
+        type: types.SEARCH_PRODUCT,
+        value
+    }
+}

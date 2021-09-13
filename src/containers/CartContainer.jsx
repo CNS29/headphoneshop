@@ -23,9 +23,9 @@ const CartContainer = (props) => {
         let result = 0;
         if(cartList.length > 0) {
             cartList.forEach(item => {
-                result += item.quantity * item.price;
+                result += item.quantity * (+item.price);
             });
-            return result;
+            return result.toLocaleString("de-DE");
         }
         return result;
     }

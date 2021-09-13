@@ -6,14 +6,19 @@ import * as actions from "../redux/actions/actions";
 
 const ProductContainer = () => {
     const products = useSelector(state => state.products);
+    const search = useSelector(state => state.search);
+
     const dispatch = useDispatch();
 
     useEffect(() => {
         dispatch(actions.actGetProductRequest);
     }, [dispatch]);
 
-    const showProducts = (products) => {
+    const showProducts = (products, search) => {
         let result = null;
+        products = products.filter(item => {
+            return item.name.toLowerCase().includes(search.toLowerCase());
+        });
         if(products.length > 0) {
             result = products.map((item, index) => {
                 return <ProductItem 
@@ -34,7 +39,7 @@ const ProductContainer = () => {
     return (
         <div>
             <Products>
-                {showProducts(products)}
+                {showProducts(products, search)}
             </Products>
         </div>
     )
