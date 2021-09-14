@@ -6,7 +6,7 @@ import ContactPage from "./pages/ContactPage";
 
 export const routes = [
     {
-        path: "/home",
+        path: "/",
         exact: true,
         main: () => <HomePage />
     },
@@ -34,7 +34,7 @@ export const routes = [
 
 export const links = [
     {
-        to: "/home",
+        to: "/",
         label: "Home",
         activeOnlyWhenExact: true
     },
