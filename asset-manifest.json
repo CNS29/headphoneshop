@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/headphoneshop/static/css/main.81c86aca.chunk.css",
+    "main.js": "/headphoneshop/static/js/main.2a0caae4.chunk.js",
+    "main.js.map": "/headphoneshop/static/js/main.2a0caae4.chunk.js.map",
+    "runtime-main.js": "/headphoneshop/static/js/runtime-main.bcd95a35.js",
+    "runtime-main.js.map": "/headphoneshop/static/js/runtime-main.bcd95a35.js.map",
+    "static/js/2.38f8a40b.chunk.js": "/headphoneshop/static/js/2.38f8a40b.chunk.js",
+    "static/js/2.38f8a40b.chunk.js.map": "/headphoneshop/static/js/2.38f8a40b.chunk.js.map",
+    "static/js/3.d3be0e33.chunk.js": "/headphoneshop/static/js/3.d3be0e33.chunk.js",
+    "static/js/3.d3be0e33.chunk.js.map": "/headphoneshop/static/js/3.d3be0e33.chunk.js.map",
+    "index.html": "/headphoneshop/index.html",
+    "static/css/main.81c86aca.chunk.css.map": "/headphoneshop/static/css/main.81c86aca.chunk.css.map",
+    "static/js/2.38f8a40b.chunk.js.LICENSE.txt": "/headphoneshop/static/js/2.38f8a40b.chunk.js.LICENSE.txt",
+    "static/media/headphone.83f9b75b.png": "/headphoneshop/static/media/headphone.83f9b75b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bcd95a35.js",
+    "static/js/2.38f8a40b.chunk.js",
+    "static/css/main.81c86aca.chunk.css",
+    "static/js/main.2a0caae4.chunk.js"
+  ]
+}
