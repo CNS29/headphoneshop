@@ -9,6 +9,16 @@
     transform: translateX(0);
   }
 }
+@keyframes fadeLeftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 @keyframes fadeInToOut {
   0% {
     opacity: 0;
@@ -59,6 +69,10 @@ img {
 
 input {
   outline: none;
+  border: none;
+}
+
+button {
   border: none;
 }
 
@@ -1166,11 +1180,13 @@ input {
 }
 .prewiew .preview_title {
   font-size: 5.9rem;
+  animation: fadeLeftToRight 1s ease;
 }
 .prewiew .preview_text {
   width: 80%;
   opacity: 0.5;
   padding-bottom: 35px;
+  animation: fadeRightToLeft 1s ease;
 }
 .prewiew .preview_button {
   display: flex;
@@ -1183,6 +1199,7 @@ input {
   padding: 25px 60px;
   transition: 0.2s ease-in;
   font-weight: bold;
+  animation: fadeInToOut 2s ease;
 }
 .prewiew .preview_button .btn_buynow {
   margin-right: 30px;
@@ -1203,6 +1220,7 @@ input {
   top: 0;
   right: 0%;
   transform: scale(1.3);
+  animation: fadeInToOut 2s ease;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1390,11 +1408,27 @@ input {
 .App {
   width: 100%;
   height: 100vh;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  scroll-behavior: smooth;
+}
+
+.scroll-top {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #fe8033;
+  bottom: 5%;
+  right: 5%;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.7);
+  z-index: 997;
+  transition: 0.2s ease-in-out;
 }
 
 /*# sourceMappingURL=App.css.map */

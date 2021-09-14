@@ -6,6 +6,7 @@ import Header from "./compnents/Header/Header";
 import Footer from "./compnents/Footer/Footer";
 import CartContainer from "./containers/CartContainer";
 import * as routes from './routes';
+import ButtonScrollTop from './compnents/Button/ButtonScrollTop';
 
 const showRoute = (routes) => {
   let result = null; 
@@ -18,9 +19,17 @@ const showRoute = (routes) => {
   return result;
 }
 
+// Scroll To Top
+const srollToTop = (click) => {
+  if(click) {
+    document.querySelector(".App").scrollTop = 0;
+  }
+}
+
 function App() {
   const [cart, setCart] = useState(false);
   const quantityInCart = useSelector(state => state.cart);
+
 
   const showCart = (check) => {
     return check ? <CartContainer closeCart={closeCart}/>: "";
@@ -47,6 +56,7 @@ function App() {
           </div>
         </div>
         <Footer />
+        <ButtonScrollTop srollToTop={srollToTop}/>
       </div>
     </Router>
   );
