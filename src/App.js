@@ -35,7 +35,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <Router basename="/headphone">
       <div className="App">
         <Header openCart={openCart} quantityInCart={quantityInCart.length}/>
         {showCart(cart)}

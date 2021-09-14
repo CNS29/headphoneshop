@@ -2,7 +2,7 @@
   "name": "e-commerce-headphone",
   "version": "0.1.0",
   "private": true,
-  "homepage": " https://cns29.github.io/",
+  "homepage": " https://cns29.github.io/headphone",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
