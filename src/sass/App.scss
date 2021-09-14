@@ -6,8 +6,13 @@
 @import "_product";
 @import "footer";
 @import "cart";
+@import "preview";
 @import "responsive";
 
 .App {
-    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    @include dFlex($just: space-between);
+    flex-direction: column;
 }

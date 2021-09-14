@@ -19,6 +19,21 @@
             }
         }
     }
+
+    .prewiew {
+        .preview_desc  {
+            margin-left: 100px;
+        }
+        .preview_title {
+            font-size: 5rem;
+        }
+
+        .preview_img {
+            right: -20%;
+            transform: scale(1.1);
+        }
+    }
+
     .logo {
         font-size: 2.8rem;
     }
@@ -29,6 +44,29 @@
         width: 900px;
         padding: 0 20px;
     }
+
+    .prewiew {
+        .preview_desc  {
+            margin-left: 0;
+            max-width: 60%;
+        }
+
+        .preview_title {
+            font-size: 4.4rem;
+        }
+
+
+        .preview_img {
+            transform: scale(1);
+        }
+
+        .preview_button {
+            .btn_buynow {
+                margin-right: 10px;
+            }
+        }
+    }
+
     .footer {
         .logo {
             text-align: center;
@@ -80,6 +118,24 @@
             z-index: 998;
         }
     }
+
+    .prewiew {
+        .preview_title {
+            font-size: 3.4rem;
+        }
+
+        .preview_img {
+            transform: scale(0.8);
+            right: -50%;
+        }
+
+        .preview_button {
+            .btn {
+                padding: 20px 0;
+            }
+        }
+    }
+
     .logo {
         font-size: 2.4rem;
     }
@@ -128,6 +184,30 @@
             }
         }
     }
+
+    .prewiew {
+
+        .preview_desc {
+            align-items: center;
+            max-width: 100%;
+        }
+
+        .preview_img {
+            position: unset;
+            transform: scale(1.2);
+        }
+
+        .preview_text {
+            width: 100%;
+        }
+
+        .preview_button {
+            .btn {
+                padding: 25px 60px;
+            }
+        }
+    }
+
     .logo {
         font-size: 2rem;
     }

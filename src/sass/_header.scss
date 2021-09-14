@@ -27,6 +27,7 @@
 
     ul {
         @include dFlex;
+        
         li {
             margin-left: 15px;
             padding: 10px;
@@ -96,4 +97,9 @@
             }
         }
     }
+    .active {
+        color: $white;
+    }
 }
+
+

@@ -7,7 +7,6 @@ import * as actions from "../redux/actions/actions";
 const ProductContainer = () => {
     const products = useSelector(state => state.products);
     const search = useSelector(state => state.search);
-
     const dispatch = useDispatch();
 
     useEffect(() => {

@@ -115,5 +115,27 @@
 
     .btn_pay {
         width: 100%;
+        position: relative;
+        text-transform: uppercase;
+        span {
+            position: relative;
+            z-index: 2;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 0;
+            width: 100%;
+            background-color: rgb(1, 96, 151);
+            transform:  translate(-50%, -50%) rotate(-45deg);
+            transition: 0.2s linear;
+            z-index: 1;
+        }
+        &:hover::before {
+            height: 630%;
+            color: $white;
+        }
     }
 }

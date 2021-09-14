@@ -23,7 +23,7 @@ const Cart = (props) => {
                     <h3 className="pay_text">Tổng</h3>
                     <p className="pay_total">{props.totalCart}<span>đ</span></p>
                 </div>
-                <div className="btn btn_pay">Thanh toán</div>
+                <div className="btn btn_pay"><span>Thanh toán</span></div>
             </div>
         </div>
     )

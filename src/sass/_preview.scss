@@ -1,0 +1,52 @@
+.prewiew {
+    position: relative;
+    .preview_desc {
+        max-width: 50%;
+        margin-left: 50px;
+        @include dFlex($align: flex-start);
+        flex-direction: column;
+        color: $text-color-rgba;
+    }
+
+    .preview_title {
+        font-size: 5.9rem;
+    }
+
+    .preview_text {
+        width: 80%;
+        opacity: 0.5;
+        padding-bottom: 35px;
+    }
+
+    .preview_button {
+        @include dFlex;
+        .btn {
+            white-space: nowrap;
+            border-radius: 35px;
+            padding: 25px 60px;
+            transition: .2s ease-in;
+            font-weight: bold;
+        }
+        .btn_buynow {
+            margin-right: 30px;
+            &:hover {
+                color: $white;
+                background-color: #fb863e;
+            }
+        }
+        .btn_explore {
+            background-color: transparent;
+            border: 1px solid $cta;
+            &:hover {
+                background-color: $cta;
+            }
+        }
+    }
+
+    .preview_img {
+        position: absolute;
+        top: 0;
+        right: 0%;
+        transform: scale(1.3);
+    }
+}

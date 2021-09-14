@@ -86,6 +86,11 @@ input {
   z-index: 1;
 }
 
+.title_page {
+  color: #fff;
+  font-size: 4rem;
+}
+
 .container {
   max-width: 1400px;
   margin: auto;
@@ -878,6 +883,9 @@ input {
 .header .search .icon-cart:hover {
   color: #fff;
 }
+.header .active {
+  color: #fff;
+}
 
 .product {
   padding-top: 50px;
@@ -959,6 +967,7 @@ input {
   margin-top: 100px;
   background-color: #2b3039;
   padding: 50px 0;
+  width: 100%;
 }
 .footer .container {
   margin: 0 auto;
@@ -1119,6 +1128,81 @@ input {
 }
 .cart .btn_pay {
   width: 100%;
+  position: relative;
+  text-transform: uppercase;
+}
+.cart .btn_pay span {
+  position: relative;
+  z-index: 2;
+}
+.cart .btn_pay::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 0;
+  width: 100%;
+  background-color: #016097;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transition: 0.2s linear;
+  z-index: 1;
+}
+.cart .btn_pay:hover::before {
+  height: 630%;
+  color: #fff;
+}
+
+.prewiew {
+  position: relative;
+}
+.prewiew .preview_desc {
+  max-width: 50%;
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.7);
+}
+.prewiew .preview_title {
+  font-size: 5.9rem;
+}
+.prewiew .preview_text {
+  width: 80%;
+  opacity: 0.5;
+  padding-bottom: 35px;
+}
+.prewiew .preview_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prewiew .preview_button .btn {
+  white-space: nowrap;
+  border-radius: 35px;
+  padding: 25px 60px;
+  transition: 0.2s ease-in;
+  font-weight: bold;
+}
+.prewiew .preview_button .btn_buynow {
+  margin-right: 30px;
+}
+.prewiew .preview_button .btn_buynow:hover {
+  color: #fff;
+  background-color: #fb863e;
+}
+.prewiew .preview_button .btn_explore {
+  background-color: transparent;
+  border: 1px solid #fe8033;
+}
+.prewiew .preview_button .btn_explore:hover {
+  background-color: #fe8033;
+}
+.prewiew .preview_img {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  transform: scale(1.3);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1138,6 +1222,17 @@ input {
     max-width: 190px;
   }
 
+  .prewiew .preview_desc {
+    margin-left: 100px;
+  }
+  .prewiew .preview_title {
+    font-size: 5rem;
+  }
+  .prewiew .preview_img {
+    right: -20%;
+    transform: scale(1.1);
+  }
+
   .logo {
     font-size: 2.8rem;
   }
@@ -1146,6 +1241,20 @@ input {
   .container {
     width: 900px;
     padding: 0 20px;
+  }
+
+  .prewiew .preview_desc {
+    margin-left: 0;
+    max-width: 60%;
+  }
+  .prewiew .preview_title {
+    font-size: 4.4rem;
+  }
+  .prewiew .preview_img {
+    transform: scale(1);
+  }
+  .prewiew .preview_button .btn_buynow {
+    margin-right: 10px;
   }
 
   .footer .logo {
@@ -1189,6 +1298,17 @@ input {
     background-color: #272b34;
     padding-bottom: 30px;
     z-index: 998;
+  }
+
+  .prewiew .preview_title {
+    font-size: 3.4rem;
+  }
+  .prewiew .preview_img {
+    transform: scale(0.8);
+    right: -50%;
+  }
+  .prewiew .preview_button .btn {
+    padding: 20px 0;
   }
 
   .logo {
@@ -1239,6 +1359,21 @@ input {
     margin-left: 20px;
   }
 
+  .prewiew .preview_desc {
+    align-items: center;
+    max-width: 100%;
+  }
+  .prewiew .preview_img {
+    position: unset;
+    transform: scale(1.2);
+  }
+  .prewiew .preview_text {
+    width: 100%;
+  }
+  .prewiew .preview_button .btn {
+    padding: 25px 60px;
+  }
+
   .logo {
     font-size: 2rem;
   }
@@ -1253,7 +1388,13 @@ input {
   }
 }
 .App {
-  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=App.css.map */

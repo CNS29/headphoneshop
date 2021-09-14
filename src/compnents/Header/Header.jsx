@@ -1,6 +1,8 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import * as actions from "../../redux/actions/actions";
+import { Link, Route } from 'react-router-dom';
+import * as routes from "../../routes";
 
 const toggleMenu = () => {
     document.querySelector(".header ul").classList.toggle("active_menu");
@@ -8,6 +10,28 @@ const toggleMenu = () => {
 
 const toggleSearch = () => {
     document.querySelector(".input").classList.toggle("toggle_input");
+}
+
+const showLink = (links) => {
+    let result = null; 
+    if(links.length > 0) {
+        result = links.map((item, index) => {
+            return <Route 
+            key={index} 
+            path={item.to}
+            exact={item.activeOnlyWhenExact}
+            children={({match}) => {
+                return (
+                    <li className={match ? "active" : ""}>
+                        <Link to={item.to}>{item.label}</Link>
+                    </li>
+                )
+            }}
+            />
+        })
+        return result;
+    } 
+    return result;
 }
 
 const Header = (props) => {
@@ -21,12 +45,9 @@ const Header = (props) => {
 
     return (
         <header className="header">
-            <div className="logo">HeadPhone</div>
+            <div className="logo">Headphone</div>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">Our Products</a></li>
-                <li><a href="/">About Us</a></li>
-                <li><a href="/">Contact</a></li>
+                {showLink(routes.links)}
             </ul>
             <div className="search">
                 <div className="search_input">
