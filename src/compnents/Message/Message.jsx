@@ -1,17 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
-const Message = (props) => {
-    useEffect(() => {
-       if(props.message) {
-            document.querySelector(".toast").classList.add("toast--active");
-            const time = setTimeout(() => {
-                document.querySelector(".toast").classList.remove("toast--active");
-            }, 1000)
-            return () => {
-                clearTimeout(time);
-            }
-       }
-    }, [props])
+const Message = () => {
     return (
         <div className="toast">
             <div className="toast_icom">

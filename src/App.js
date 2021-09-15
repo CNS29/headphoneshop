@@ -7,7 +7,6 @@ import Footer from "./compnents/Footer/Footer";
 import CartContainer from "./containers/CartContainer";
 import * as routes from './routes';
 import ButtonScrollTop from './compnents/Button/ButtonScrollTop';
-import Message from './compnents/Message/Message';
 
 const showRoute = (routes) => {
   let result = null; 
@@ -30,7 +29,7 @@ const srollToTop = (click) => {
 function App() {
   const [cartVisible, setCartVisible] = useState(false);
   const state = useSelector(state => state);
-  const {cart, message} = state;
+  const {cart} = state;
 
   const showCart = (check) => {
     return check ? <CartContainer closeCart={closeCart}/>: "";
@@ -56,7 +55,6 @@ function App() {
             </Switch>
           </div>
         </div>
-        <Message message={message}/>
         <Footer />
         <ButtonScrollTop srollToTop={srollToTop}/>
       </div>

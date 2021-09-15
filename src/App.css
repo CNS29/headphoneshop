@@ -992,7 +992,6 @@ button {
   color: green;
   transition: 0.2s linear;
   transform: translateX(110%);
-  visibility: hidden;
 }
 .toast .toast_icom {
   font-size: 2.5rem;
@@ -1004,7 +1003,6 @@ button {
 
 .toast--active {
   transform: translateX(0);
-  visibility: visible;
 }
 
 .footer {
