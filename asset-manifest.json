@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/headphone/static/css/main.2d884dd5.chunk.css",
-    "main.js": "/headphone/static/js/main.31e7f50f.chunk.js",
-    "main.js.map": "/headphone/static/js/main.31e7f50f.chunk.js.map",
-    "runtime-main.js": "/headphone/static/js/runtime-main.53480e12.js",
-    "runtime-main.js.map": "/headphone/static/js/runtime-main.53480e12.js.map",
-    "static/js/2.9ba3f7eb.chunk.js": "/headphone/static/js/2.9ba3f7eb.chunk.js",
-    "static/js/2.9ba3f7eb.chunk.js.map": "/headphone/static/js/2.9ba3f7eb.chunk.js.map",
-    "static/js/3.d3be0e33.chunk.js": "/headphone/static/js/3.d3be0e33.chunk.js",
-    "static/js/3.d3be0e33.chunk.js.map": "/headphone/static/js/3.d3be0e33.chunk.js.map",
-    "index.html": "/headphone/index.html",
-    "static/css/main.2d884dd5.chunk.css.map": "/headphone/static/css/main.2d884dd5.chunk.css.map",
-    "static/js/2.9ba3f7eb.chunk.js.LICENSE.txt": "/headphone/static/js/2.9ba3f7eb.chunk.js.LICENSE.txt",
-    "static/media/headphone.83f9b75b.png": "/headphone/static/media/headphone.83f9b75b.png"
+    "main.css": "/headphoneshop/static/css/main.d8f6f441.chunk.css",
+    "main.js": "/headphoneshop/static/js/main.81b0ed08.chunk.js",
+    "main.js.map": "/headphoneshop/static/js/main.81b0ed08.chunk.js.map",
+    "runtime-main.js": "/headphoneshop/static/js/runtime-main.bcd95a35.js",
+    "runtime-main.js.map": "/headphoneshop/static/js/runtime-main.bcd95a35.js.map",
+    "static/js/2.9ba3f7eb.chunk.js": "/headphoneshop/static/js/2.9ba3f7eb.chunk.js",
+    "static/js/2.9ba3f7eb.chunk.js.map": "/headphoneshop/static/js/2.9ba3f7eb.chunk.js.map",
+    "static/js/3.d3be0e33.chunk.js": "/headphoneshop/static/js/3.d3be0e33.chunk.js",
+    "static/js/3.d3be0e33.chunk.js.map": "/headphoneshop/static/js/3.d3be0e33.chunk.js.map",
+    "index.html": "/headphoneshop/index.html",
+    "static/css/main.d8f6f441.chunk.css.map": "/headphoneshop/static/css/main.d8f6f441.chunk.css.map",
+    "static/js/2.9ba3f7eb.chunk.js.LICENSE.txt": "/headphoneshop/static/js/2.9ba3f7eb.chunk.js.LICENSE.txt",
+    "static/media/headphone.83f9b75b.png": "/headphoneshop/static/media/headphone.83f9b75b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.53480e12.js",
+    "static/js/runtime-main.bcd95a35.js",
     "static/js/2.9ba3f7eb.chunk.js",
-    "static/css/main.2d884dd5.chunk.css",
-    "static/js/main.31e7f50f.chunk.js"
+    "static/css/main.d8f6f441.chunk.css",
+    "static/js/main.81b0ed08.chunk.js"
   ]
 }
