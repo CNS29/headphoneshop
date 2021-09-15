@@ -66,6 +66,7 @@ button {
     position: relative;
     cursor: pointer;
     overflow: hidden;
+    user-select: none;
     span {
         z-index: 1;
     }

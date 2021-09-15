@@ -95,6 +95,7 @@ button {
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  user-select: none;
 }
 .btn span {
   z-index: 1;
@@ -975,6 +976,35 @@ button {
 }
 .product .product_card:hover {
   transform: scale(1.1);
+}
+
+.toast {
+  position: fixed;
+  bottom: 20%;
+  right: 20px;
+  min-height: 50px;
+  background-color: #fff;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 998;
+  color: green;
+  transition: 0.2s linear;
+  transform: translateX(110%);
+  visibility: hidden;
+}
+.toast .toast_icom {
+  font-size: 2.5rem;
+  padding: 10px 15px;
+}
+.toast .toast_text {
+  padding-right: 15px;
+}
+
+.toast--active {
+  transform: translateX(0);
+  visibility: visible;
 }
 
 .footer {

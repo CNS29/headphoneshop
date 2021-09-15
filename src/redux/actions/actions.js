@@ -42,3 +42,10 @@ export const searchProduct = (value) => {
         value
     }
 }
+
+export const message = (isCheck) => {
+    return {
+        type: types.MESSAGE,
+        isCheck
+    }
+}

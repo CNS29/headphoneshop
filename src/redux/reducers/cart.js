@@ -16,7 +16,7 @@ const cart = (state = initialState, action) => {
             }else {
                 let newState = {
                     ...action.product,
-                    quantity: 1
+                    quantity: 1,
                 };
                 state.push(newState);
             }

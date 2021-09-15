@@ -33,6 +33,7 @@ const ProductContainer = () => {
 
     const addToCart = (product) => {
         dispatch(actions.addProductToCart(product));
+        dispatch(actions.message(true));
     }
 
     return (
