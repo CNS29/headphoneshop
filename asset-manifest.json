@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/headphone/static/css/main.81c86aca.chunk.css",
-    "main.js": "/headphone/static/js/main.0c5ec0e9.chunk.js",
-    "main.js.map": "/headphone/static/js/main.0c5ec0e9.chunk.js.map",
+    "main.css": "/headphone/static/css/main.2d884dd5.chunk.css",
+    "main.js": "/headphone/static/js/main.31e7f50f.chunk.js",
+    "main.js.map": "/headphone/static/js/main.31e7f50f.chunk.js.map",
     "runtime-main.js": "/headphone/static/js/runtime-main.53480e12.js",
     "runtime-main.js.map": "/headphone/static/js/runtime-main.53480e12.js.map",
-    "static/js/2.38f8a40b.chunk.js": "/headphone/static/js/2.38f8a40b.chunk.js",
-    "static/js/2.38f8a40b.chunk.js.map": "/headphone/static/js/2.38f8a40b.chunk.js.map",
+    "static/js/2.9ba3f7eb.chunk.js": "/headphone/static/js/2.9ba3f7eb.chunk.js",
+    "static/js/2.9ba3f7eb.chunk.js.map": "/headphone/static/js/2.9ba3f7eb.chunk.js.map",
     "static/js/3.d3be0e33.chunk.js": "/headphone/static/js/3.d3be0e33.chunk.js",
     "static/js/3.d3be0e33.chunk.js.map": "/headphone/static/js/3.d3be0e33.chunk.js.map",
     "index.html": "/headphone/index.html",
-    "static/css/main.81c86aca.chunk.css.map": "/headphone/static/css/main.81c86aca.chunk.css.map",
-    "static/js/2.38f8a40b.chunk.js.LICENSE.txt": "/headphone/static/js/2.38f8a40b.chunk.js.LICENSE.txt",
+    "static/css/main.2d884dd5.chunk.css.map": "/headphone/static/css/main.2d884dd5.chunk.css.map",
+    "static/js/2.9ba3f7eb.chunk.js.LICENSE.txt": "/headphone/static/js/2.9ba3f7eb.chunk.js.LICENSE.txt",
     "static/media/headphone.83f9b75b.png": "/headphone/static/media/headphone.83f9b75b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.53480e12.js",
-    "static/js/2.38f8a40b.chunk.js",
-    "static/css/main.81c86aca.chunk.css",
-    "static/js/main.0c5ec0e9.chunk.js"
+    "static/js/2.9ba3f7eb.chunk.js",
+    "static/css/main.2d884dd5.chunk.css",
+    "static/js/main.31e7f50f.chunk.js"
   ]
 }
